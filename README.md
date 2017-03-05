@@ -1,4 +1,5 @@
-# CRssfeed a PHP class for displaying a RSS feedA simple RSS-reader module for the micro framework Anax MVC. 
+# CRssfeed a PHP class for displaying a RSS feed
+A simple RSS-reader module for the micro framework Anax MVC. 
 ## LicenseThis module is licensed according to MIT-license.
 ## Installation (for Anax MVC)
 Use git clone or download a copy.   
