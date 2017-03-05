@@ -1,0 +1,17 @@
+{     
+    "name": "johe14/rss-feed", 
+    "description": "PHP class that lists a RSS feed", 
+    "keywords": ["module", "rssfeed", "rssreader", "mvc", "education"], 
+    "license": "MIT", 
+    "authors": [
+        {
+            "name": "Johan Hestrell",
+            "email": "johe14@bth.se",
+            "homepage": "http://www.bth.se",
+            "role": "Developer"
+        }
+    ],
+    "require": { 
+        "php": ">=5.3" 
+    } 
+} 
