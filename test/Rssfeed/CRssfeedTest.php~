@@ -3,56 +3,32 @@
 namespace Anax\Rssfeed;
 
 /**
- * A class to show a RSS-feed.
- *
+ * This class will test the class that shows a RSS-feed.
+ * 
  */
-class CRssfeed { 
-   
-    /**
-     * Properties
-     *
-     */ 
-    private $options = array();
-    private $url;
-    private $heading;
-    private $items;
-     
-    /**
-     * Constructor
-     *
-     * @param array $options to alter the default behaviour.
-     */
-    public function __construct($options=array()) {
-       $this->url = $options['url'];
-       $this->heading = $options['heading']; 
-       $this->items = $options['items'];
-    }
-	
-    public function readRSS(){
-    	
-       $html = "<article>";
-       $heading = $this->heading; 
-       $html .= "<h1>$heading</h1>";
-       $xml = simplexml_load_file($this->url);
-
-       for($i = 0; $i < $this->items; $i++){
-	       $title = $xml->channel->item[$i]->title;
-	       $link = $xml->channel->item[$i]->link;
-	       $description = $xml->channel->item[$i]->description;
-	       $pubDate = $xml->channel->item[$i]->pubDate;
-	       
-	       // Formatting the date
-           $pubDate= date("D, d M Y H:i:s T", strtotime($pubDate));
-	       
-           $html .= "<a href='$link'><h3>$title</h3></a>";
-	       $html .= "<small>$pubDate</small><br /><br />";
-           $html .= "$description";
-           $html .= "<hr />";
-       }
-       $html .= "</article>";
-           
-       return $html;
+class CRssfeedTest extends \PHPUnit_Framework_TestCase{
     
-    }      
-     
+    /**
+     * Test 
+     * @return void 
+     *
+     */
+    public function testCreateClass()
+    {
+        $rss = new \Anax\Rssfeed\CRssfeed([
+            'url' => 'http://feeds.idg.se/ComputerSweden20SenasteNyheter',
+            'heading' => 'An example RSS feed',
+            'items' => '5'
+        ]);
+        
+        $res = get_class($rss);
+        $exp = "Anax\Rssfeed\CRssfeed";
+        $this->assertEquals($res, $exp, "This is not the correct class.");
+        
+        //$res = $rss->characterEncoding;
+        //$exp = 'UTF-8';
+        //$this->assertEquals($res, $exp, "Character encoding missmatch.");
+    }
+ 
+	
 }
