@@ -2,7 +2,7 @@
 
 namespace johe14\Rssfeed;
 
-//use johe14\Rssfeed\CRssfeed; 
+use johe14\Rssfeed\CRssfeed; 
 
 /**
  * This class will test the class that shows a RSS-feed.
