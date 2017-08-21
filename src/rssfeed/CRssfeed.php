@@ -1,6 +1,6 @@
 <?php
 
-namespace Anax\Rssfeed;
+namespace johe14\Rssfeed;
 
 /**
  * A class to show a RSS-feed.
