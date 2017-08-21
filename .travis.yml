@@ -12,7 +12,7 @@ php:
     
 before_script:
     #- wget https://scrutinizer-ci.com/ocular.phar
-    - composer install
+    #- composer install
 
 script: 
     - phpunit --bootstrap test/config.php test

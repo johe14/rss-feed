@@ -2,7 +2,7 @@
 
 namespace johe14\Rssfeed;
 
-use \johe14\Rssfeed\CRssfeed; 
+use johe14\Rssfeed\CRssfeed; 
 
 /**
  * This class will test the class that shows a RSS-feed.
@@ -24,7 +24,7 @@ class CRssfeedTest extends \PHPUnit_Framework_TestCase{
      * Test 
      * @return void 
      *
-     */
+     
     public function testCreateClass()
     {
         $rss = new \johe14\Rssfeed\CRssfeed($this->options);
@@ -33,6 +33,8 @@ class CRssfeedTest extends \PHPUnit_Framework_TestCase{
         $exp = "johe14\Rssfeed\CRssfeed";
         $this->assertEquals($res, $exp, "This is not the correct class.");
     }
+    
+     */
     
     public function testReadRSS()
     {   	
