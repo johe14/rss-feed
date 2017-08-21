@@ -27,17 +27,17 @@ class CRssfeedTest extends \PHPUnit_Framework_TestCase{
      */
     public function testCreateClass()
     {
-        $rss = new \johe14\rssfeed\CRssfeed($this->options);
+        $rss = new \johe14\Rssfeed\CRssfeed($this->options);
         //$rss = new CRssfeed($this->options);
         
         $res = get_class($rss);
-        $exp = "johe14\rssfeed\CRssfeed";
+        $exp = "johe14\Rssfeed\CRssfeed";
         $this->assertEquals($res, $exp, "This is not the correct class.");
     }
     
     public function testReadRSS()
     {   	
-        $rss = new \johe14\rssfeed\CRssfeed($this->options);
+        $rss = new \johe14\Rssfeed\CRssfeed($this->options);
         
         $test = $rss->readRSS();
         $this->assertStringStartsWith('<article>', $test);
