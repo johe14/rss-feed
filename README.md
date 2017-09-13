@@ -1,3 +1,4 @@
+[![Build Status](https://scrutinizer-ci.com/g/johe14/rss-feed/badges/build.png?b=master)](https://scrutinizer-ci.com/g/johe14/rss-feed/build-status/master) [![Code Coverage](https://scrutinizer-ci.com/g/johe14/rss-feed/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/johe14/rss-feed/?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/johe14/rss-feed/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/johe14/rss-feed/?branch=master)
 # CRssfeed a PHP class for displaying a RSS feed
 A simple RSS-reader module for the micro framework Anax MVC. 
 ## License
